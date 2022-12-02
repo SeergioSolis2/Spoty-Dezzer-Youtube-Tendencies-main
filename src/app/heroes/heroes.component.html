@@ -1,0 +1,32 @@
+
+<div class="row">
+    <select class="form-select" id="DezeerSelect" onchange="DezeerRequest()" style="width:200px ; border-radius:10px">
+        <option value="0" selected>Top Hits Mexico</option>
+        <option value="1">Top Worldwide</option>
+        <option value="2">Top Hits Argentina</option>
+        <option value="3">Top Hits USA</option>
+    </select>
+    <div class="col-12" style="text-align:center ; ">
+        <img src="assets/img/Deezer-logo.png" style="width:300px;height:200px;">
+        <H1 id="Encabezado"></H1>
+      
+    </div>
+    <div class="col-12" style="text-align:center ;overflow:auto; height:300px;">
+        
+        <table class="col-12"  >
+            <thead   style="background-color:black ;color:azure;">
+                <tr>
+                    <td class="col-3">RANKING</td>
+                    <td class="col-3">CANCION</td>
+                    <td class="col-3" >ARTISTA</td>
+                    <td class="col-3">DURACION</td>
+                </tr>
+            </thead>
+            <tbody id="DezeerTabla" >
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript" src="Scripts/Peticiones.js"></script>
